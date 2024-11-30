@@ -3,6 +3,9 @@ const sdk = require("microsoft-cognitiveservices-speech-sdk");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path");
+const cors = require('cors');
+app.use(cors());
+
 require("dotenv").config();
 
 const app = express();
@@ -75,7 +78,7 @@ app.post("/synthesize", async (req, res) => {
         console.log(audioPath);
         const fileName = path.basename(audioPath);
         console.log(fileName);
-        const audioUrl = `http://localhost:3000/${fileName}?v=${Date.now()}`; // Generate complete URL correctly
+        const audioUrl = `http://45.55.248.22:3000/${fileName}?v=${Date.now()}`; // Generate complete URL correctly
 
         console.log("Generated audio URL:", audioUrl); // Log the generated URL
 
@@ -89,5 +92,5 @@ app.post("/synthesize", async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://45.55.248.22:${port}`);
 });

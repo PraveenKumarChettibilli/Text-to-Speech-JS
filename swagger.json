@@ -7,8 +7,8 @@
     },
     "servers": [
       {
-        "url": "http://localhost:3000",
-        "description": "Local development server"
+        "url": "http://45.55.248.22:3000",
+        "description": "Deployed server"
       }
     ],
     "paths": {
@@ -74,7 +74,7 @@
                       "audioUrl": {
                         "type": "string",
                         "description": "The URL of the synthesized audio file.",
-                        "example": "http://localhost:3000/output_1691234567890.wav"
+                        "example": "http://45.55.248.22:3000/output_1691234567890.wav"
                       }
                     }
                   }
