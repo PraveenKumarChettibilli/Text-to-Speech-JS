@@ -78,7 +78,7 @@ app.post("/synthesize", async (req, res) => {
         console.log(audioPath);
         const fileName = path.basename(audioPath);
         console.log(fileName);
-        const audioUrl = `http://45.55.248.22:3000/${fileName}?v=${Date.now()}`; // Generate complete URL correctly
+        const audioUrl = `http://${req.headers.host}/${fileName}?v=${Date.now()}`; // Generate complete URL correctly
 
         console.log("Generated audio URL:", audioUrl); // Log the generated URL
 
