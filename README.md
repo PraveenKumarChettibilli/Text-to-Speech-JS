@@ -19,9 +19,15 @@ A feature-rich Text-to-Speech (TTS) application powered by Azure Cognitive Servi
 # 🖼️ Screenshots
 
 ### Swagger UI
-![Swagger UI Screenshot](./screenshots/swagger_docs_ui.jpg)
+- Swagger API Documentation Screenshot.
+![Swagger UI Screenshot](./screenshots/swagger_docs_ui.png)
+- Get Request which gives the status of the server.
+![Swagger GET Request](./screenshots/swagger_get.png)
+- Post Request which gives the synthesize audio file as output.
+![Swagger POST Request](./screenshots/swagger_post.png)
 
-Audio File Example
+### Audio File Example Responses on Swagger UI
+![Audio File Responses](./screenshots/swagger_audio_responses.png)
 
 # 📋 Prerequisites
 1. Node.js (v16 or later recommended)
@@ -81,9 +87,12 @@ pm2 start app.js --name text-to-speech
 http://localhost:3000
 ```
 
+**Screenshot of UI or Web Interface for referrence**
+![Web Interface](./screenshots/live_demo_img.jpg)
+
 **2. Enter the text in the text field, select the voice from the drop down and click on "Synthesize Text"**
 
-**3. The Audio file will be played using the media player below the Synthesize Text button.**
+**3. The Audio file will be played using the "Audio player" below the Synthesize Text button.**
 
 # 🔗 Usage through Swagger API documentation.
 
@@ -145,6 +154,8 @@ pm2 start app.js --name text-to-speech
 Check out the deployed version here: [Live Demo](http://45.55.248.22:3000/)
 and deployed Swagger Documentation here: [Live Swagger Documentation](http://45.55.248.22:3000/api-docs/)
 
+- Refer to the usage steps to explore the demo of the UI or Web interface and Swagger API documentation.
+
 
 # 🧰 Tech Stack
 
@@ -156,11 +167,6 @@ and deployed Swagger Documentation here: [Live Swagger Documentation](http://45.
 
 - **Process Management:** PM2
 
-# 📷 Additional Images
-
-Logs and Error Handling
-
-Audio Output Folder
 
 # 🙌 Contributing
 I welcome contributions! Feel free to:
